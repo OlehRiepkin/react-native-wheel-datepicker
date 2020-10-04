@@ -18,6 +18,13 @@ android {
     }
 }
 
+allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://jitpack.io" }
+        }
+   }
+
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.github.OlehRiepkin:WheelPicker:oleh-SNAPSHOT"
