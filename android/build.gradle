@@ -20,7 +20,7 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    gitRepository("https://github.com/OlehRiepkin/WheelPicker.git") {
+    gitRepository('https://github.com/OlehRiepkin/react-native-wheel-datepicker.git') {
         producesModule("cn.aigestudio.wheelpicker:WheelPicker")
     }
     implementation "com.facebook.react:react-native:${safeExtGet('reactNativeVersion', '+')}"
