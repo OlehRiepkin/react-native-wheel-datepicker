@@ -20,6 +20,8 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "cn.aigestudio.wheelpicker:WheelPicker:1.0.3"
+    gitRepository("https://github.com/OlehRiepkin/WheelPicker.git") {
+        producesModule("cn.aigestudio.wheelpicker:WheelPicker")
+    }
     implementation "com.facebook.react:react-native:${safeExtGet('reactNativeVersion', '+')}"
 }
